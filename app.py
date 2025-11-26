@@ -31,8 +31,9 @@ def loginform ():
 def registeration():
     return render_template("register.html")
 
-
-
+@app.route("/OTP", strict_slashes=False, methods=["POST"])
+def OTP():
+    return render_template("OTP.html")
 
 
 

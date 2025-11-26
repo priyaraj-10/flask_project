@@ -12,8 +12,8 @@
     <div class="d-grid col-8 mx-auto">
 
         <div class="form-floating mb-3">
-            <input name="username" type="text" class="form-control" id="username" placeholder="username" value="{{ request.form['username'] }}">
-            <label for="username">Username</label>
+            <input name="username" type="text" class="form-control" id="username" placeholder="username/email" value="{{ request.form['username'] }}">
+            <label for="username">Username/email</label>
         </div>
         <div class="form-floating mb-3">
             <input name="password" type="password" class="form-control" id="password" placeholder="Password">
@@ -24,7 +24,7 @@
             <label for="repassword">Re-enter Password</label>
         </div>
 
-        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="submit" class="btn btn-primary" href="{{url_for("OTP")}}">Register/get OTP</button>
 
     </div>
 
