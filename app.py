@@ -28,11 +28,12 @@ def loginform ():
     return render_template("login.html")
 
 @app.route("/register", strict_slashes=False)
-def registeration():
+def registration():
     return render_template("register.html")
 
 @app.route("/OTP", strict_slashes=False, methods=["POST"])
 def OTP():
+    otp=request.form
     return render_template("OTP.html")
 
 

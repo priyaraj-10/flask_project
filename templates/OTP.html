@@ -1,8 +1,24 @@
+{% include "base.html" %}
+
+{% block content %}
 <div class="card" style="width: 18rem;">
   <img src="{{url_for("static", filename="CricIQ_image.jpg.png")}}" class="card-img-top" alt="CricIQ`s logo">
   <div class="card-body">
     <h5 class="card-title">CricIQ</h5>
-    <input type = "password" name = "otp" value = "enter your OTP here"/ maxsize="6">
-    <a href="{{url_for("home")}}" class="btn btn-primary stretched-link">verify</a>
+    <input type = "password" name = "otp" value = "enter your OTP here" maxsize="6">
+    <a href="#" class="btn btn-primary stretched-link">verify</a>
   </div>
 </div>
+{% endblock %}
+
+<!-- {% block scripts %}
+<p>thank you for registering with us</p>
+
+{for key,value in results.items()}
+<tr>
+<th>{{key}}</th>
+
+<td>{{value}}</td>  
+
+</tr>
+{% endblock %} -->
